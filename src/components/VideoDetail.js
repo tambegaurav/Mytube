@@ -14,10 +14,9 @@ const VideoDetail = ({ video }) => {
           <iframe
             title="video-player"
             src={videoSrc}
-            frameborder="2"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          />
+            frameborder="0"
+            allowFullScreen
+          ></iframe>
         </div>
         <div className="ui header">{video.snippet.title}</div>
         <p>{video.snippet.description}</p>
