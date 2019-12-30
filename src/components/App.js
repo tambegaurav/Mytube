@@ -28,12 +28,12 @@ class App extends React.Component {
     return (
       <div className="ui container">
         <SearchBar onFormSubmit={this.onTermSubmit} />
-        <div className="ui grid">
+        <div className="ui equal width grid">
           <div className="ui row">
-            <div className="eleven wide column">
+            <div className="fifteen wide column">
               <VideoDetail video={this.state.selectedVideo} />
             </div>
-            <div className="five wide column">
+            <div className="twelve wide column">
               <VideoList
                 onVideoSelect={this.onVideoSelect.bind(this)}
                 videos={this.state.videos}
