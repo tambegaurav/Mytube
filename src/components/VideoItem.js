@@ -1,5 +1,5 @@
-import './VideoItem.css';
-import React from 'react';
+import "./VideoItem.css";
+import React from "react";
 
 const VideoItem = ({ video, onVideoSelect }) => {
   return (
@@ -8,6 +8,12 @@ const VideoItem = ({ video, onVideoSelect }) => {
         onVideoSelect(video);
       }}
       className="video-item item"
+      style={{
+        marginTop: "15px",
+        border: "3px solid #696969",
+        width: "100%",
+        borderRadius: "5px",
+      }}
     >
       <img
         alt={video.snippet.title}

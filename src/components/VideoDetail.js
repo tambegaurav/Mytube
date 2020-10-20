@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const VideoDetail = ({ video }) => {
   if (!video) {
@@ -8,19 +8,17 @@ const VideoDetail = ({ video }) => {
   const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
 
   return (
-    <div>
-      <div className="ui segment">
-        <div className="ui embed">
-          <iframe
-            title="video-player"
-            src={videoSrc}
-            frameborder="0"
-            allowFullScreen
-          ></iframe>
-        </div>
-        <div className="ui header">{video.snippet.title}</div>
-        <p>{video.snippet.description}</p>
+    <div className="ui segment">
+      <div className="ui embed">
+        <iframe
+          title="video-player"
+          src={videoSrc}
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
       </div>
+      <div className="ui header">{video.snippet.title}</div>
+      <p>{video.snippet.description}</p>
     </div>
   );
 };
